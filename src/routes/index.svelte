@@ -1,5 +1,7 @@
-<script>
+<script context="module">
+	import { browser } from '$app/env';
+
 	import { goto } from '$app/navigation';
 
-	goto('/blog/');
+	if (browser) goto('/blog/');
 </script>
