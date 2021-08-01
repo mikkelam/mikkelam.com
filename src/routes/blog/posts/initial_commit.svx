@@ -1,6 +1,7 @@
 ---
 title: Initial Commit
 date: 2021-07-29
+published: true
 ---
 
 Hello world

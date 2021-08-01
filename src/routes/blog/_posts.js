@@ -2,7 +2,7 @@ import { basename } from 'path';
 
 export function getPosts() {
 	// Import all .svx files in the directory
-	const modules = import.meta.globEager('/posts/*.svx');
+	const modules = import.meta.globEager('./posts/*.svx');
 
 	// Run a map over each module
 
