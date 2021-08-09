@@ -11,6 +11,9 @@
 <svelte:head>
 	<title>{title}</title>
 	<meta name="description" content={outline} />
+	<head>
+		<link href="/prism-vsc-dark-plus.css" rel="stylesheet" />
+	</head>
 </svelte:head>
 
 <Content>

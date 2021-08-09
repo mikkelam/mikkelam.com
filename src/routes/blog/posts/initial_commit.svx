@@ -2,7 +2,18 @@
 title: Initial Commit
 date: 2021-07-29
 published: true
-outline: this is what this blog post will be about
+outline: This is how the outline looks
 ---
+Obligatory:
+```python
+print("Hello world!")
+```
 
-Hello world
+
+
+
+<style>
+	pre{
+
+	}
+</style>
