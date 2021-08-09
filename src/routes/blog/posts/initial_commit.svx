@@ -2,6 +2,7 @@
 title: Initial Commit
 date: 2021-07-29
 published: true
+outline: this is what this blog post will be about
 ---
 
 Hello world

@@ -2,6 +2,7 @@
 title: Hey test
 date: 2021-07-31
 published: true
+outline: 
 ---
 
 this is another one

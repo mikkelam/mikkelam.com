@@ -14,7 +14,8 @@ export function getPosts() {
 		return {
 			title: metadata.title,
 			date: new Date(metadata.date),
-			slug: basename(filename, '.svx')
+			slug: basename(filename, '.svx'),
+			outline: metadata.outline ?? "Author was, lazy. Click to read"
 		};
 	});
 	// Sort posts by descending date

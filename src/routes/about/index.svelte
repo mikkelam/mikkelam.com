@@ -1,5 +1,5 @@
 <script>
-	import Body from '$lib/Content.svelte';
+	import Content from '$lib/Content.svelte';
 </script>
 
-<Body>about things</Body>
+<Content>about things</Content>

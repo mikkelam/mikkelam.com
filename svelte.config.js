@@ -25,6 +25,7 @@ const config = {
 	},
 
 	preprocess: mdsvex({
+		layout:"/src/routes/blog/blog.svelte",
 		remarkPlugins: [abbr],
 		rehypePlugins: [
 			slug,

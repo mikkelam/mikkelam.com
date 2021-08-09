@@ -4,17 +4,37 @@
 	import { browser } from '$app/env';
 	import Content from '$lib/Content.svelte';
 	if (browser) import('virtual:windi-devtools');
+	console.log('hey');
 </script>
 
 <Sidebar />
-<main class="ml-74 h-screen overflow-y-auto">
+<main class="lg:ml-74 h-screen overflow-y-auto">
 	<Content>
 		<slot />
 	</Content>
 </main>
 
 <style>
-	a {
-		@apply text-blue-gray-200 hover:opacity-50 mr-auto;
+	@layer base {
+		a {
+			@apply  hover:opacity-50 mr-auto;
+		}
+
+		p,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		span {
+			@apply font-mono;
+		}
+		h1 {
+			@apply text-2xl;
+		}
+		h2 {
+			@apply text-xl;
+		}
 	}
 </style>

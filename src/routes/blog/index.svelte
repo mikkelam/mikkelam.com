@@ -13,24 +13,30 @@
 </script>
 
 <script>
-	import Body from '$lib/Content.svelte';
+	import Content from '$lib/Content.svelte';
 
 	export let posts = [];
 </script>
 
-<Body>
-	<div class="p-4">
-		{#each posts as { title, slug, date }}
-			<div class="mb-4 p-2 bg-gray-200 rounded-md">
+<Content>
+	<div class="p-2 w-3/4 ml-auto mr-auto">
+		{#each posts as { title, slug, date, outline }}
+			<div class="mb-4 p-2">
 				<div>
-					<a class="text-blue-500 space-y-3" href="blog/posts/{slug}">
-						<h1 class="text-2xl">
-							{title}
-						</h1>
+					<a class=" space-y-3" href="blog/posts/{slug}">
+						<div>
+							<h1 class="text-2xl  font-bold">
+								{title}
+							</h1>
+							<time class="text-xs block text-gray-500" datetime={date}
+								>{new Date(date).toLocaleDateString()}</time
+							>
+							<p class="text-sm">{outline}</p>
+						</div>
 					</a>
-					<p class="text-xs text-gray-500">{date.toLocaleDateString()}</p>
 				</div>
 			</div>
+			<div class="h-1 w-full bg-gray-700 opacity-5" />
 		{/each}
 	</div>
-</Body>
+</Content>
