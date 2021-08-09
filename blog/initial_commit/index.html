@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-e533caa1.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-553b73a9.js">
+		<link rel="modulepreload" href="/./_app/chunks/preload-helper-08cc8e69.js">
+		<link rel="modulepreload" href="/./_app/chunks/singletons-12a22614.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-ed1108df.js">
+		<link rel="modulepreload" href="/./_app/pages/blog/[slug].svelte-e63979b2.js">
+		<link rel="stylesheet" href="/./_app/assets/start-25a78b07.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-a729346c.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-e533caa1.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-ed1108df.js"),
+						import("/./_app/pages/blog/[slug].svelte-e63979b2.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/blog/initial_commit",
+						query: new URLSearchParams(""),
+						params: {"slug":"initial_commit"}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<aside class="m-4 fixed h-full w-48 bg-gray-100"><nav class=""><div class="flex flex-col gap-y-2 "><a href="/blog/">Blog</a>
+	<a href="/about/">About</a></div></nav></aside>
+<main class="ml-52"></main>
+
+
+
+	<script type="application/json" data-type="svelte-data" data-url="/blog/initial_commit.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"{\"title\":\"Initial Commit\",\"date\":\"2021-07-29T00:00:00.000Z\",\"slug\":\"initial_commit\"}"}</script>
+</div>
+	</body>
+</html>
