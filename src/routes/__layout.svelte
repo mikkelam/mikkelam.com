@@ -4,7 +4,6 @@
 	import { browser } from '$app/env';
 	import Content from '$lib/Content.svelte';
 	if (browser) import('virtual:windi-devtools');
-	console.log('hey');
 </script>
 
 <Sidebar />
