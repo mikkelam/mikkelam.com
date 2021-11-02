@@ -3,8 +3,8 @@
 		<div class="flex flex-col gap-y-3 ">
 			<a href="/"><h1 class="text-4xl  text-orange-300">mikkelam.com</h1></a>
 			<p class="text-gray-600 text-xs">Some danish nerd</p>
-			<a href="/blog/">blog</a>
-			<a href="/about/">about</a>
+			<a sveltekit:prefetch href="/blog/">blog</a>
+			<a sveltekit:prefetch href="/about/">about</a>
 		</div>
 		<div class="p-2 mt-4 space-x-4">
 			<a href="https://github.com/mikkelam" class="inline-block">
