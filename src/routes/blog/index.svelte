@@ -23,7 +23,7 @@
 		{#each posts as { title, slug, date, outline }}
 			<div class="mb-4 p-2">
 				<div>
-					<a sveltekit:prefetch class=" space-y-3" href="blog/posts/{slug}">
+					<a sveltekit:prefetch class=" space-y-3" href="/blog/posts/{slug}">
 						<div>
 							<h1 class="text-2xl  font-bold">
 								{title}
