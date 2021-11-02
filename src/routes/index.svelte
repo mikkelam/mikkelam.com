@@ -1,7 +1,8 @@
 <script context="module">
-	import { browser } from '$app/env';
-
-	import { goto } from '$app/navigation';
-
-	if (browser) goto('/blog/');
+	export async function load() {
+		return {
+			status: 302,
+			redirect: '/blog'
+		};
+	}
 </script>
