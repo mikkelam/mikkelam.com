@@ -2,6 +2,7 @@
 title: Initial Commit
 date: 2021-07-29
 published: true
+layout: post
 outline: This is how the outline looks
 ---
 Obligatory:
@@ -9,8 +10,19 @@ Obligatory:
 print("Hello world!")
 ```
 
+# Magic time
+
+Here's some svelte magic 🧙‍♂️
+
+<div>
+	<input type=range bind:value={val} min=0 max=100 name="magic">
+	<label for="magic">the value is {val}!</label>
+<div>
 
 
+<script>
+let val = 1;
+</script>
 
 <style>
 	pre{
