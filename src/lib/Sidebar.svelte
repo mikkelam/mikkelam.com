@@ -1,7 +1,7 @@
 <aside class="lg:fixed top-0 lg:bottom-0  left-0  bg-warm-gray-900 lg:w-74 w-full overflow-auto">
 	<nav class="pl-4 lg:pt-40">
 		<div class="flex flex-col gap-y-3 ">
-			<a href="/"><h1 class="text-4xl  text-orange-300">mikkelam.com</h1></a>
+			<a sveltekit:prefetch href="/blog/"><h1 class="text-4xl  text-orange-300">mikkelam.com</h1></a>
 			<p class="text-gray-600 text-xs">Some danish nerd</p>
 			<a sveltekit:prefetch href="/blog/">blog</a>
 			<a sveltekit:prefetch href="/about/">about</a>
