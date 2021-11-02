@@ -20,13 +20,16 @@
 
 <Content>
 	<div class="p-2 w-3/4 ml-auto mr-auto">
-		{#each posts as { title, slug, date, outline }}
+		{#each posts as { title, slug, date, outline, published }}
 			<div class="mb-4 p-2">
 				<div>
 					<a sveltekit:prefetch class=" space-y-3" href="/blog/posts/{slug}">
 						<div>
 							<h1 class="text-2xl  font-bold">
 								{title}
+								{#if !published}
+									<span class="text-green-500">Unpublished</span>
+								{/if}
 							</h1>
 							<time class="text-xs block text-gray-500" datetime={date}
 								>{new Date(date).toLocaleDateString()}</time
@@ -42,8 +45,7 @@
 </Content>
 
 <style>
-
-	a{
+	a {
 		@apply text-black !important;
 	}
 </style>
