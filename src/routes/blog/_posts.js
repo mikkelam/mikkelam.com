@@ -1,3 +1,4 @@
+import { dev } from '$app/env';
 import { basename } from 'path';
 
 export function getPosts() {
@@ -13,13 +14,16 @@ export function getPosts() {
 
 		return {
 			title: metadata.title,
+			published: metadata.published ?? false,
 			date: new Date(metadata.date),
 			slug: basename(filename, '.svx'),
 			outline: metadata.outline ?? "Author was, lazy. Click to read"
 		};
 	});
 	// Sort posts by descending date
-	posts.sort((a, b) => (a.date > b.date ? -1 : 1));
+	posts = posts.sort((a, b) => (a.date > b.date ? -1 : 1));
+	if (!dev)
+		posts = posts.filter((post) => post.published);
 
 	return posts;
 }
