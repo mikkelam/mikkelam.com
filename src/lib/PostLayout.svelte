@@ -35,6 +35,9 @@
 </Content>
 
 <style>
+	p {
+		@apply mb-2;
+	}
 	h1 {
 		@apply text-2xl;
 	}
@@ -45,4 +48,5 @@
 	h3 {
 		@apply text-lg;
 	}
+
 </style>

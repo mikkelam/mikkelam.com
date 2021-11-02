@@ -34,6 +34,6 @@
 
 <style>
 	a {
-		@apply text-blue-gray-200;
+		@apply text-blue-gray-200 !important;
 	}
 </style>

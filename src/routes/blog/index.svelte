@@ -40,3 +40,10 @@
 		{/each}
 	</div>
 </Content>
+
+<style>
+
+	a{
+		@apply text-black !important;
+	}
+</style>

@@ -15,8 +15,8 @@
 
 <style>
 	@layer base {
-		a {
-			@apply  hover:opacity-50 mr-auto;
+		.link {
+			@apply text-blue-500 hover:opacity-50 !important;
 		}
 
 		p,
@@ -30,10 +30,16 @@
 			@apply font-mono;
 		}
 		h1 {
-			@apply text-2xl;
+			@apply text-2xl !important;
 		}
 		h2 {
-			@apply text-xl;
+			@apply text-xl !important;
+		}
+		h3 {
+			@apply text-lg !important;
+		}
+		p {
+			@apply mb-2 !important;
 		}
 	}
 </style>
