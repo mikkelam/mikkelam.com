@@ -1,1 +1,0 @@
-import{S as s,i as o,s as n}from"../chunks/vendor-c2d566a0.js";import{r as t}from"../chunks/singletons-12a22614.js";(async function(s,o){t.goto(s,o,[])})("/blog/");class a extends s{constructor(s){super(),o(this,s,null,null,n,{})}}export{a as default};

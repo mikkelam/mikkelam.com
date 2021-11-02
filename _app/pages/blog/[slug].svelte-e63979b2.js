@@ -1,1 +1,0 @@
-import{S as s,i as t,s as o}from"../../chunks/vendor-553b73a9.js";async function n({page:s,fetch:t,slug:o}){const n=`/blog/${s.params.slug}.json`,a=await t(n);return{props:{post:await a.json()}}}function a(s,t,o){let{post:n}=t;return s.$$set=s=>{"post"in s&&o(0,n=s.post)},[n]}class r extends s{constructor(s){super(),t(this,s,a,null,o,{post:0})}}export{r as default,n as load};
