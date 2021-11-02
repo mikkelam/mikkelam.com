@@ -1,11 +1,8 @@
-<script>
-</script>
-
-<aside class="lg:fixed top-0 lg:bottom-0  left-0  bg-warm-gray-900 lg:w-74 w-full ">
+<aside class="lg:fixed top-0 lg:bottom-0  left-0  bg-warm-gray-900 lg:w-74 w-full overflow-auto">
 	<nav class="pl-4 lg:pt-40">
 		<div class="flex flex-col gap-y-3 ">
 			<a href="/"><h1 class="text-4xl  text-orange-300">mikkelam.com</h1></a>
-			<p class="text-gray-600 text-xs">just a danish nerd</p>
+			<p class="text-gray-600 text-xs">Some danish nerd</p>
 			<a href="/blog/">blog</a>
 			<a href="/about/">about</a>
 		</div>
@@ -14,7 +11,6 @@
 				<svg aria-hidden="true" viewBox="0 0 16 16" class="w-7 h-7  fill-current text-white">
 					<path
 						d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-					/>
 					/>
 				</svg>
 			</a>
@@ -25,7 +21,7 @@
 					/></svg
 				>
 			</a>
-			<a href="mailto:mikkelam@icloud.com" class="inline-block">
+			<a href="mailto:tangled-stadia0y@icloud.com" class="inline-block">
 				<svg class="w-7 h-7 fill-current text-white " viewBox="0 0 400 400"
 					><path
 						d="M0 127.5v146.719L104.8 206.1zM400 274.219V127.5l-104.8 78.6zM200 277.5l-69.643-52.232L0 310v30h400v-30l-130.357-84.732z"
@@ -37,7 +33,7 @@
 </aside>
 
 <style>
-	a{
+	a {
 		@apply text-blue-gray-200;
 	}
 </style>
