@@ -1,38 +1,38 @@
-import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-static';
-import WindiCSS from 'vite-plugin-windicss';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
+import { mdsvex } from 'mdsvex';
 import abbr from 'remark-abbr';
-import slug from 'rehype-slug';
+import rehypeSlug from 'rehype-slug';
 import autoLinkHeadings from 'rehype-autolink-headings';
 import addClasses from 'rehype-add-classes';
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
-	extensions: ['.svelte', '.svx'],
 
+
+export default {
+	extensions: ['.svelte', '.svx'],
 	kit: {
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
-		vite: () => ({
-			plugins: [WindiCSS()]
-		}),
 		adapter: adapter({
+			// default options are shown. On some platforms
+			// these options are set automatically — see below
 			pages: 'build',
 			assets: 'build',
-			fallback: null
+			fallback: undefined,
+			precompress: false,
+			strict: true
 		})
 	},
-
-	preprocess: mdsvex({
-		layout: { post: "/src/lib/PostLayout.svelte" },
-		remarkPlugins: [abbr],
-		rehypePlugins: [
-			slug,
-			[autoLinkHeadings, { behavior: 'wrap' }],
-			[addClasses, { 'ul,ol': 'list' }]
-		]
-	})
+	preprocess: [
+		vitePreprocess({}),
+		mdsvex({
+			extensions: ['.md', '.svx'],
+			layout: { post: "/src/lib/PostLayout.svelte" },
+			remarkPlugins: [abbr],
+			rehypePlugins: [
+				rehypeSlug,
+				[autoLinkHeadings, { behavior: 'wrap' }],
+				[addClasses, { 'ul,ol': 'list' }]
+			]
+		})
+	]
 };
-
-export default config;

@@ -1,21 +1,12 @@
-<script context="module">
-	export async function load({ page, fetch }) {
-		const posts = await fetch('/blog/posts.json');
-		const json = await posts.json();
-
-		json.forEach((el) => (el.date = new Date(el.date)));
-		return {
-			props: {
-				posts: json
-			}
-		};
-	}
-</script>
-
 <script>
 	import Content from '$lib/Content.svelte';
+	export let data;
 
-	export let posts = [];
+	export let posts = data.posts;
+
+	posts.forEach((el) => {
+		el.date = new Date(el.date);
+	});
 </script>
 
 <Content>
@@ -25,14 +16,14 @@
 				<div>
 					<a sveltekit:prefetch class=" space-y-3" href="/blog/posts/{slug}">
 						<div>
-							<h1 class="text-2xl  font-bold">
+							<h1 class="text-2xl font-bold">
 								{title}
 								{#if !published}
 									<span class="text-green-500">Unpublished</span>
 								{/if}
 							</h1>
 							<time class="text-xs block text-gray-500" datetime={date}
-								>{new Date(date).toLocaleDateString()}</time
+								>{date.toLocaleDateString()}</time
 							>
 							<p class="text-sm">{outline}</p>
 						</div>
@@ -44,7 +35,7 @@
 	</div>
 </Content>
 
-<style>
+<style lang="postcss">
 	a {
 		@apply text-black !important;
 	}

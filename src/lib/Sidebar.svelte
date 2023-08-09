@@ -1,4 +1,4 @@
-<aside class="lg:fixed top-0 lg:bottom-0  left-0  bg-warm-gray-900 lg:w-74 w-full overflow-auto">
+<aside class="lg:fixed top-0 lg:bottom-0  left-0  bg-stone-900 lg:w-74 w-full overflow-auto">
 	<nav class="pl-4 lg:pt-40">
 		<div class="flex flex-col gap-y-3 ">
 			<a sveltekit:prefetch href="/"><h1 class="text-4xl  text-orange-300">mikkelam.com</h1></a>
@@ -32,8 +32,8 @@
 	</nav>
 </aside>
 
-<style>
+<style lang="postcss">
 	a {
-		@apply text-blue-gray-200 !important;
+		@apply text-blue-200 !important;
 	}
 </style>
