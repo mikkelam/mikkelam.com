@@ -11,19 +11,16 @@
 <svelte:head>
 	<title>{title}</title>
 	<meta name="description" content={outline} />
-	<head>
-		<link href="/prism-vsc-dark-plus.css" rel="stylesheet" />
-	</head>
 </svelte:head>
 
 <Content>
-	<div class="my-8 px-2">
+	<div class="scrol my-2 min-h-screen lg:my-8 lg:px-2">
 		<div class="mb-12 w-3/4">
 			<div>
 				<h1 class="text-3xl">{title}</h1>
 
 				<p class="mt-2 text-gray-600">
-					Posted
+					Written
 					<time datetime={date}>{new Date(date).toLocaleDateString()}</time>
 				</p>
 			</div>

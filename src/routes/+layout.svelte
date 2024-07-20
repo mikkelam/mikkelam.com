@@ -4,9 +4,9 @@
 	import Content from '$lib/Content.svelte';
 </script>
 
-<div class="flex h-screen flex-col lg:flex-row">
+<div class="flex flex-col lg:min-h-screen lg:flex-row">
 	<Sidebar />
-	<main class="mt-0 flex-1 overflow-y-auto">
+	<main class="mt-0 flex-1">
 		<Content>
 			<slot />
 		</Content>

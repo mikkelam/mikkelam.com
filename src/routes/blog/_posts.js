@@ -19,7 +19,7 @@ export async function getPosts() {
 				date: new Date(metadata.date),
 				slug: basename(filename, '.svx'),
 				outline:
-					metadata.outline ?? sampled_clickbaity_outlines.length
+					(metadata.outline ?? sampled_clickbaity_outlines.length)
 						? sampled_clickbaity_outlines.pop()
 						: 'No outline provided'
 			};
