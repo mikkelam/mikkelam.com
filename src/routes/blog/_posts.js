@@ -1,28 +1,27 @@
 import { dev } from '$app/environment';
 import { basename } from 'path';
 
-export function getPosts() {
-	const modules = import.meta.globEager('./posts/*.svx');
+export async function getPosts() {
+	const modules = import.meta.glob('../../posts/*.svx');
 
-	let posts = Object.entries(modules).flatMap((entry) => {
-		const [filename, module] = entry;
+	let posts = await Promise.all(
+		Object.entries(modules).map(async (entry) => {
+			const [filename, module] = entry;
+			console.log(await module());
+			const { metadata } = await module(); // Change here
 
-		const { metadata } = module;
-
-		return {
-			title: metadata.title,
-			published: metadata.published ?? false,
-			date: new Date(metadata.date),
-			slug: basename(filename, '.svx'),
-			outline: metadata.outline ?? "Author was, lazy. Click to read"
-		};
-	});
+			return {
+				title: metadata.title,
+				published: metadata.published ?? false,
+				date: new Date(metadata.date),
+				slug: basename(filename, '.svx'),
+				outline: metadata.outline ?? metadata.content
+			};
+		})
+	);
 	// Sort posts by descending date
 	posts = posts.sort((a, b) => (a.date > b.date ? -1 : 1));
-	if (!dev)
-		posts = posts.filter((post) => post.published);
+	if (!dev) posts = posts.filter((post) => post.published);
 
 	return posts;
 }
-
-

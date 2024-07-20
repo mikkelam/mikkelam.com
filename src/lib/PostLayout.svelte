@@ -22,12 +22,12 @@
 			<div>
 				<h1 class="text-3xl">{title}</h1>
 
-				<p class="text-gray-600 mt-2">
+				<p class="mt-2 text-gray-600">
 					Posted
 					<time datetime={date}>{new Date(date).toLocaleDateString()}</time>
 				</p>
 			</div>
-			<div class="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 h-2 mt-2" />
+			<div class="mt-2 h-2 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500" />
 		</div>
 
 		<slot />
@@ -48,5 +48,4 @@
 	h3 {
 		@apply text-lg;
 	}
-
 </style>

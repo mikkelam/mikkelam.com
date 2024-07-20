@@ -4,11 +4,11 @@
 	import Content from '$lib/Content.svelte';
 </script>
 
-<Sidebar />
-<main class="lg:ml-74 h-screen overflow-y-auto">
-	<Content>
-		<slot />
-	</Content>
-</main>
-
-
+<div class="flex h-screen flex-col lg:flex-row">
+	<Sidebar />
+	<main class="mt-0 flex-1 overflow-y-auto">
+		<Content>
+			<slot />
+		</Content>
+	</main>
+</div>
