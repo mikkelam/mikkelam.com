@@ -1,0 +1,23 @@
+---
+title: Ode to a penguin lover🐧
+date: 2024-07-20
+published: true
+layout: post
+---
+
+<pre class="highlighted-poem max-w-[540px] ">
+Oh penguin lover, you are among the finest around.
+In the world of code, your skills truly astound.
+With open-source fervor, you craft with delight,
+Lines of pure magic, in the depths of the night.
+
+Commanding the terminal with grace and ease.
+You navigate systems like a brisk, gentle breeze.
+From kernel to shell, you master each part.
+Your passion for 🐧 is born from the heart.
+
+With every keystroke, you weave digital art.
+In the vast cyber ocean, you’re a guiding chart.
+Without you, the world would surely fall,
+Yet all you get is a +1 on GitHub. That’s all.
+</pre>

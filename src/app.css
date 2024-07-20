@@ -34,4 +34,10 @@
 	p {
 		@apply mb-2 !important;
 	}
+
+	.highlighted-poem {
+		@apply whitespace-pre-wrap rounded-lg;
+		@apply border bg-gray-100 p-2 font-mono leading-6 lg:p-4;
+		@apply text-xs lg:text-base;
+	}
 }
