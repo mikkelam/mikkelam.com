@@ -10,7 +10,7 @@
 		"preview": "vite preview",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint src/",
 		"format": "prettier --write --plugin-search-dir=. .",
-		"publish": "vite build && node ./gh-pages.js"
+		"publish": "bun run build && bun run gh-pages -t -d build"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.7.0",
