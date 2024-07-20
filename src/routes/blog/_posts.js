@@ -1,13 +1,9 @@
 import { dev } from '$app/environment';
 import { basename } from 'path';
-import { clickbaity_outlines } from '../../lib/clickbait';
 
 export async function getPosts() {
 	const modules = import.meta.glob('../../posts/*.svx');
 
-	const sampled_clickbaity_outlines = clickbaity_outlines
-		.sort(() => 0.5 - Math.random())
-		.slice(0, 5);
 	let posts = await Promise.all(
 		Object.entries(modules).map(async (entry) => {
 			const [filename, module] = entry;
@@ -18,10 +14,7 @@ export async function getPosts() {
 				published: metadata.published ?? false,
 				date: new Date(metadata.date),
 				slug: basename(filename, '.svx'),
-				outline:
-					(metadata.outline ?? sampled_clickbaity_outlines.length)
-						? sampled_clickbaity_outlines.pop()
-						: 'No outline provided'
+				outline: metadata.outline ?? 'No outline provided'
 			};
 		})
 	);

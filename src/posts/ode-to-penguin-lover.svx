@@ -2,6 +2,7 @@
 title: Ode to a penguin lover🐧
 date: 2024-07-20
 published: true
+outline: Poem about OSS devs
 layout: post
 ---
 
