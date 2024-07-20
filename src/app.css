@@ -5,7 +5,7 @@
 
 @layer base {
 	.link {
-		@apply text-blue-500 hover:opacity-50 !important;
+		@apply text-blue-500 hover:opacity-60 !important;
 	}
 
 	p,

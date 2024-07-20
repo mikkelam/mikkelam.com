@@ -1,19 +1,19 @@
 ---
 title: Consumer or producer?
-date: 2021-11-02
+date: 2024-07-20
 published: false
 layout: post
 outline: Thoughts about producer and consumer behavior
 ---
 
-I think a lot about producing vs. consuming. I wonder which one I should and even want to be doing and why.  
+I think a lot about producing vs. consuming. I wonder which one I should and even want to be doing and why.
 
 
-First, let me define these two terms the way I see it:   
+First, let me define these two terms the way I see it:
 
-### Producing 
+### Producing
 Producting is to make something. It can be ideas, food, code, drawings etc. Producing something is a creative process, one could consider all objects being produced as art.
 
-### Consuming 
+### Consuming
 
 It is simply so easy to consume. I find it extremely attractive. After a hard day of work at the office (where I mostly produce I guess?), to fuse with the couch and consume some dumb shit tv. In rare moments I do find inspiriation to produce

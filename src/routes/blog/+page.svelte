@@ -14,7 +14,7 @@
 		{#each posts as { title, slug, date, outline, published }}
 			<div class="mb-4 p-2">
 				<div>
-					<a data-sveltekit-preload-data class=" space-y-3" href="/blog/{slug}">
+					<a data-sveltekit-preload-data class="link space-y-3" href="/blog/{slug}">
 						<div>
 							<h1 class="text-2xl font-bold">
 								{title}

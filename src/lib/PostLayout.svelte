@@ -34,7 +34,7 @@
 	</div>
 </Content>
 
-<style>
+<style lang="postcss">
 	p {
 		@apply mb-2;
 	}
