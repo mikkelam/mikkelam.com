@@ -1,7 +1,6 @@
 <aside class="bg-stone-900">
 	<nav class="p-2 lg:p-4 lg:pt-40">
 		<div class="flex flex-col lg:gap-y-2">
-			<!-- Adjusted div to flex-row on small screens -->
 			<div class="flex flex-row justify-between lg:flex-col lg:space-y-2">
 				<div>
 					<a class="link" data-sveltekit-preload-data href="/">

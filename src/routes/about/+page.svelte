@@ -22,6 +22,13 @@
 			I've recently started to appreciate reading and have been consuming a ton of amazing books. I
 			might have a book section later where I add and sort through some favorites and suggestions.
 		</p>
+		<p>
+			I've built this blog to motivate myself to write down my thoughts more and because it was a
+			fun challenge. I like the 2000-esque style of making your own unique blog. I've built this
+			page using SvelteKit and MDsveX (which enabled a nice mix of markdown/svelte writing).
+			TailwindCSS is for styling. If you're interested in reading the source code. It can be found
+			<a class="link" href="https://github.com/mikkelam/mikkelam.com">here</a>
+		</p>
 
 		<p>Here's my favorite quote from Mark Twain</p>
 		<div class="ml-4 rounded-md bg-gray-200 px-4 py-2">
