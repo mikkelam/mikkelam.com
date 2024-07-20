@@ -1,25 +1,27 @@
-# .github/workflows/publish.yml
+# # .github/workflows/publish.yml
 
-name: Publish
+# name: Publish
 
-on:
-  push:
-    tags:
-      - 'v*'
+# on:
+#   push:
+#     tags:
+#       - 'v*'
 
-jobs:
-  publish:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v2
+# jobs:
+#   publish:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       - uses: oven-sh/setup-bun@v2
 
-      - name: Install dependencies
-        run: bun install
+#       - name: Install dependencies
+#         run: bun install
 
-      - name: Build and publish
-        run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          bun run publish -- -u "github-actions-bot <support+actions@github.com>"
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+#       # TODO: fix this. bun has some kind of shitty issue so this is not working atm
+#       - name: Build and publish
+#         run: |
+#           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+#           bun run publish -- -u "github-actions-bot <support+actions@github.com>"
+#         env:
+#             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
