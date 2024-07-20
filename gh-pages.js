@@ -4,11 +4,7 @@ publish(
 	'build', // path to public directory
 	{
 		branch: 'gh-pages',
-		repo: 'git@github.com:mikkelam/mikkelam.com.git', 
-		user: {
-			name: 'Mikkel Alexander Madsen', 
-			email: 'mikkelam@icloud.com'
-		},
+		repo: 'git@github.com:mikkelam/mikkelam.com.git',
 		dotfiles: true
 	},
 	() => {
