@@ -1,0 +1,73 @@
+---
+title: Thoughts about art
+date: 2024-10-21
+published: true
+outline: What is considered art?
+layout: post
+---
+
+I have been thinking quite a bit about *what* is considered art. So what is **currently** being considered art? And has that changed over time?
+
+Examples:
+1. A 2d model of something (think drawings, paintings) - anything seems to go here.
+2. A 3d model of something - again, anything seems to go here.
+3. Writing - this is a bit more tricky, we do not consider arbitrary text to be art. I think.
+4. Music - Similar to writing, do we consider a flat tone to be art? I think not.
+5. Bodily movements (dance, performance art etc.
+6. Theatre
+7. Combinations of the above
+
+What do all these have in common? They are all forms of expression. They are all ways to convey a message. They are all ways to communicate. They are all ways to tell a story. They are also all incredibly approachable for most humans to understand. Notably the language based ones are probably least approachable due to requiring a common "language".
+
+# What about *engineering*?
+
+Architecture draws a fine line between art and engineering. Is a bridge art? Is a building art? I would presume so. Again, architecture can and is appreciated by non-architects, though there might be a certain level of understanding required to appreciate the finer details. Nevertheless, the general idea of a building, its utility, its form, its function, its aesthetics, are all things that can be appreciated by most people.
+
+What about **code** though?
+
+Before we dive into that, let's look at some of the things we appreciate about art. What is it that draws us to it? What is it that makes us want to create it?
+
+Here are some of the reasons why i think we appreciate art:
+1. **Aesthetics** - This is a big one. There might be some very primitive part of us that just apprciates beauty. Think symmetry, patterns, complementary colors, etc.
+2. **Emotion** - Art can evoke emotions. It can make us feel happy, sad, angry, etc.
+3. **Storytelling** - Art tells a story. We're big suckers for stories. Our civilization is built on stories we tell eachother. We spend our lives consuming and making stories. A film is a story. A painting is a story. A song is a story.
+4. **Utility** - This is probably a bit more of a controversial take. But i think utility can be considered part of an artpiece's story. A painting can be used to decorate a room. A song can be used to dance to. A film can be used to entertain. A building can be used to live in. These are all things humans enjoy.
+
+
+Now, where does that leave us? The problem with code and probably engineering in general, is that, very similar to language-based art forms, it requires a certain level of understanding to appreciate. You can't just look at a piece of code and appreciate it. You need to understand what it does. You might think that one could employ techniques such as formatting the text nicely a certain way or using certain colors to make it more approachable. But that's not usually what programmers would appreciate.
+
+What would they appreciate? **A simple solution to a complex problem**. I think that really deeply encapsulates my own infatuation with beautiful code. I feel enamored when i see a piece of code that is so simple, yet so powerful. It's like a magic trick. It's like a beautiful painting, a beautiful song, a beautiful dance. It's a story. It's a story of a problem and its solution. It's a story of a programmer and their craft. It's a story of **a human and their creativity!**
+
+# Examples
+
+First, let's look at a simple example of a function that calculates the fibonacci sequence. This is a classic example of a problem that can be solved in a myriad of ways. Some ways are more efficient than others. Some ways are more readable than others. Some ways are more elegant than others.
+
+```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
+```
+This first one is a very simple recursive solution. It's not very efficient, but **it is very readable**.
+
+```python
+from functools import lru_cache
+
+@lru_cache(maxsize=None)
+def fibonacci(num):
+    if num < 2:
+        return num
+    else:
+        return fibonacci(num - 1) + fibonacci(num - 2)
+```
+
+This second one is very efficient. It uses memoization to store the results of previous calculations. This algorithmic problem class is known as dynamic programming. It's a very powerful technique that can be used to solve a lot of problems. I distinctly remember learning how to solve this class of problems with dictionaries in python. It was a very powerful moment for me.
+
+Now, these are a bit contrived, simple examples. My point is that there is a certain beauty to these solutions. In each their own way. The first one is beautiful in its simplicity and closeness to the mathematical definition of the fibonacci sequence. The second one is beautiful in its efficiency, power and how it achieves that though a very simple technique!
+
+
+# Wrapping up
+
+Why does this even matter? Quite simply, I think it's terribly sad how narrow-minded we are about what we consider art. We have this idea that art is something that is created by a select few creative endeavours and I really think that this is untrue.
+
+I am saddened but how little my craft is appreciated by the general public. There is this story we tell ourselves about what is art and what isn't. And i think it's a story that needs to be rewritten. I would love a world where we can appreciate the mechanical solution to a certain problem as much as we appreciate a painting. Though I do not have my hopes up, unfortunately I still think that the dependency of understanding is a big hurdle to overcome.
